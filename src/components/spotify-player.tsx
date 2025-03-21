@@ -95,7 +95,7 @@ export default function SpotifyPlayer() {
   }, [volume])
 
   return (
-    <div className='w-full max-w-md h-full  bg-[#121212] text-white rounded-lg overflow-hidden shadow-md'>
+    <div className='w-full max-w-md md:h-full bg-[#121212] text-white rounded-lg overflow-hidden shadow-md'>
       {/* Hidden audio element */}
       <audio
         ref={audioRef}
