@@ -1,4 +1,8 @@
-const API_KEY = process.env.API_KEY
+const API_KEY = import.meta.env.VITE_API_KEY
+
+if (!API_KEY) {
+  throw new Error('La API_KEY no está definida. Verifica tu archivo .env.')
+}
 
 async function AIFetch(
   completeTasks: { content: string }[],
