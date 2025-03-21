@@ -1,0 +1,29 @@
+/* Scrollbar para el tema light */
+.light *::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+.light *::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Color del track (fondo del scrollbar) */
+  border-radius: 10px;
+}
+
+.light *::-webkit-scrollbar-thumb {
+  background-color: #353535; /* Color del thumb (barra de desplazamiento) */
+  border-radius: 10px;
+}
+
+/* Scrollbar para el tema dark */
+.dark *::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark *::-webkit-scrollbar-track {
+  background: #171717; /* Color del track en modo oscuro */
+  border-radius: 10px;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background-color: #fff085; /* Color del thumb en modo oscuro */
+  border-radius: 10px;
+}

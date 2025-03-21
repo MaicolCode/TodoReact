@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Chill Japanese Song",
+    "type": "Chill",
+    "file": "./audio/JapaneseLofi.weba",
+    "image": "./images/catCoffe.webp"
+  },
+  {
+    "id": 2,
+    "title": "80's Tokyo Funky Lofi Playlist",
+    "type": "Funki",
+    "file": "./audio/TokioFunky.weba",
+    "image": "./images/catWork.webp"
+  },
+  {
+    "id": 3,
+    "title": "Playlist 80's Tokyo Lo-fi Hiphop song",
+    "type": "Lofi",
+    "file": "./audio/TokioLofi.weba",
+    "image": "./images/PusheenCat.webp"
+  }
+]
