@@ -12,7 +12,6 @@ function AISection() {
   const [loading, setLoading] = useState(false)
 
   const { completeTasks, incompleteTasks } = useTask()
-  console.log(completeTasks, incompleteTasks)
 
   const enable = completeTasks.length > 0 || incompleteTasks.length > 0
 
