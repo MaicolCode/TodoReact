@@ -23,7 +23,7 @@ function AISection() {
       const response = await AIFetch(completeTasks, incompleteTasks)
 
       const data = await response.json()
-      console.log(data)
+
       setSummary(data.choices[0].message.content)
     } catch (error) {
       console.error('Error generando el resumen:', error)

@@ -192,8 +192,6 @@ const Controls = memo(function Controls({
 }) {
   const enableBack = indexMusic > 0
   const enableForward = indexMusic == lengthMusic - 1
-
-  console.log(indexMusic, enableForward)
   return (
     <div className='px-4 pb-4'>
       <div
