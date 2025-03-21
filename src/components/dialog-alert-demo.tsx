@@ -10,7 +10,6 @@ import {
   AlertDialogTrigger
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
-import { useState } from 'react'
 
 export function AlertDialogDemo({
   action,
