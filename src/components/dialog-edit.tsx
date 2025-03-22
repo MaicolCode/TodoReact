@@ -31,7 +31,7 @@ export function DialogDemo({
     e.preventDefault()
     const formData = new FormData(e.target as HTMLFormElement)
 
-    const text = formData.get('task') as string
+    const text = formData.get('input') as string
 
     if (value && 'id' in value && 'content' in value) {
       value.content = text
@@ -56,7 +56,7 @@ export function DialogDemo({
               <Label htmlFor='task' className='text-right'>
                 Task
               </Label>
-              <InputDemo />
+              <InputDemo description={value?.content} />
             </div>
           </div>
           <DialogFooter>
