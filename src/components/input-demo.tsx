@@ -5,8 +5,8 @@ import type React from 'react'
 import { useState } from 'react'
 import { Input } from '@/components/ui/input'
 
-export function InputDemo() {
-  const [text, setText] = useState('')
+export function InputDemo({ description }: { description?: string }) {
+  const [text, setText] = useState(description || '')
   const charCount = text.length
 
   const maxChars = 100
@@ -26,6 +26,7 @@ export function InputDemo() {
     <div className='space-y-2'>
       <Input
         type='text'
+        name='input'
         placeholder='Enter up to 20 words (100 characters max)'
         value={text}
         onChange={handleChange}
