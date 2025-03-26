@@ -73,7 +73,7 @@ function Tasks() {
                 <Input
                   id='task'
                   name='task'
-                  placeholder='Your task here...'
+                  placeholder='Your task...'
                   onChange={handleChange}
                   value={text}
                   className={`${
@@ -94,6 +94,7 @@ function Tasks() {
                 aria-label='AddTask'
                 aria-labelledby='labeldiv'
                 variant='default'
+                data-testid='addTask'
                 size='icon'
                 className='bg-yellow-200 text-black shadow-sm hover:bg-yellow-100 '
               >
