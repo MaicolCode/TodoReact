@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
@@ -11,6 +12,11 @@ export default defineConfig({
     react(),
     viteCompression({ algorithm: 'gzip', ext: '.gz' })
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './setupTest.ts'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
