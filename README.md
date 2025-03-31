@@ -57,7 +57,7 @@ Este proyecto utiliza pnpm como gestor de paquetes. Asegúrate de tener pnpm ins
    ```
 3. Inicia el servidor de desarrollo:
    ```bash
-   pnpm dev
+   pnpm run dev
    ```
 4. Abre tu navegador y navega a la URL mostrada en la terminal
 
@@ -72,7 +72,4 @@ Este proyecto utiliza:
 
 ## Scripts Disponibles
 
-- `pnpm dev` - Iniciar servidor de desarrollo
-- `pnpm build` - Construir para producción
-- `pnpm lint` - Ejecutar ESLint
-- `pnpm preview` - Previsualizar construcción de producción
+- `pnpm run dev` - Iniciar servidor de desarrollo
