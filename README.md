@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# TodoReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación moderna de tareas construida con React, TypeScript y Vite. Esta aplicación ayuda a los usuarios a gestionar sus tareas diarias con una interfaz limpia e intuitiva.
 
-Currently, two official plugins are available:
+<img src="./public/TodoReactBg.webp" alt="TodoReact Screenshot">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Crear, leer, actualizar y eliminar tareas
+- Interfaz de usuario moderna y responsiva
+- Construido con TypeScript para mayor seguridad de tipos
+- Experiencia de desarrollo rápida con Vite
+- Soporte para temas claro y oscuro
+- Componentes UI de alta calidad de shadcn/ui
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologías Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS para estilos
+- shadcn/ui para componentes UI
+- Zustand para estado global
+- Sonner para notificaciones
+- Lucide React para íconos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Gestor de Paquetes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este proyecto utiliza pnpm como gestor de paquetes. Asegúrate de tener pnpm instalado en tu sistema antes de comenzar.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Dependencias Principales
+
+- **UI y Componentes**:
+
+  - shadcn/ui (Alert Dialog, Dialog, Label, Menubar, Slider, Slot, Tooltip)
+  - Lucide React
+  - Sonner
+  - Tailwind CSS
+
+- **Estado y Gestión**:
+
+  - Zustand
+
+## Dependencias de Desarrollo
+
+- ESLint y plugins
+- Jest para pruebas
+- Vite con plugin React SWC
+- Tipos de TypeScript
+
+## Empezando
+
+1. Clona el repositorio
+2. Instala las dependencias usando pnpm:
+   ```bash
+   pnpm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   pnpm dev
+   ```
+4. Abre tu navegador y navega a la URL mostrada en la terminal
+
+## Desarrollo
+
+Este proyecto utiliza:
+
+- Vite para desarrollo rápido y construcción
+- TypeScript para seguridad de tipos
+- ESLint para calidad de código
+- Jest para pruebas
+
+## Scripts Disponibles
+
+- `pnpm dev` - Iniciar servidor de desarrollo
+- `pnpm build` - Construir para producción
+- `pnpm lint` - Ejecutar ESLint
+- `pnpm preview` - Previsualizar construcción de producción
